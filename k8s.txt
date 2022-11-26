@@ -1,0 +1,14 @@
+Install minikube and Hypervisor-v for creating kubernetes cluster.
+- minikube is used to create kubernetes cluster 
+- kubectl is used to create,destroy and manage pods.
+
+###Hypervisor###
+> Install
+> DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V (enable command)
+### Minikube ###
+> minikube start --vm-driver=hyperv --force  ->start minikube on hyperv
+> minikube status
+
+### Kubectl ###
+> kubectl get nodes  ->get status of nodes
+> kubectl version    ->check kubernetes version,client and server version also
